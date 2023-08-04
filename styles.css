@@ -1,0 +1,114 @@
+body{
+    background-image: linear-gradient(145deg, blue, rgba(255, 0, 0, 0.566));
+    height: 100vh;
+    font-family:"Roboto"
+}
+form{
+    font-family: inherit;
+}
+#hide_task{
+    margin-top: 2rem;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.app{
+    padding: 1.5rem;
+    margin: 7rem auto;
+    background: rgb(59, 59, 59);
+    border-radius: 30px;
+    width: 30%;
+    min-width: 300px;
+}
+
+
+.app li{
+    margin-top: 0.7rem;
+    list-style:none;
+}
+
+
+h1,#add_task button, input{
+    font-family:"Roboto" ;
+    color: aliceblue;
+}
+#add_task{
+    margin-top: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+#add_task input{
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    padding: 1rem;
+    background: rgb(20, 14, 40);
+    color: white;
+    width: 80%;
+}
+#add_task button{
+    
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, rgb(255, 0, 0), purple);
+    color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 1rem 1rem;
+    font-weight: 700;
+}
+
+ul{
+margin-top: 2.5rem;
+margin-bottom: 1rem;
+}
+li{
+    background: rgba(7, 5, 24, 0.795);
+    color: white;
+    font-weight: 400;
+    padding: 0.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+}
+
+li .name{
+    font-family: cursive;
+}
+li .name:hover{
+    transition: 0.5s;
+    color: rgb(168, 164, 164);
+}
+li span{
+    padding-left: 1rem;
+}
+li .delete{
+    border-radius: 25px;
+    background-image: linear-gradient(90deg, rgb(255, 0, 0), purple);
+    color: aliceblue;
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    transition: 5s;
+}
+
+li span.delete:hover{
+    background-image:linear-gradient(90deg, rgb(0, 34, 255), rgb(162, 85, 179)); 
+}
+#add_task button:hover{
+    background-image:linear-gradient(90deg, rgb(0, 34, 255), rgb(162, 85, 179));
+}
+#hide_task label{
+color: white;
+}
