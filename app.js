@@ -10,12 +10,13 @@ forms[0].addEventListener("submit", (e)=>{
     let add = forms[0].querySelector("input");
     let list = document.createElement("li");
     let title = document.createElement("span");
-    let dlt = document.createElement("span");
+    let dlt = document.createElement("i");
     list.appendChild(title);
     list.appendChild(dlt);
     title.classList.add("name");
-    dlt.classList.add("delete");
-    dlt.textContent = "delete"
+    dlt.setAttribute("class", "fa")
+    dlt.classList.add("fa-trash")
+    dlt.setAttribute("aria-hidden", "true")
     let listContainer = document.querySelector("#book-list ul");
    ;
 
@@ -33,7 +34,7 @@ forms[0].addEventListener("submit", (e)=>{
 
 let listContainer = document.querySelector("#book-list ul");
 listContainer.addEventListener("click", (e)=>{
-    if(e.target.className === "delete"){
+    if(e.target.tagName === "I"){
         let list = e.target.parentNode;
         listContainer.removeChild(list);
         savedList();
