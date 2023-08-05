@@ -1,6 +1,6 @@
 body{
     background-image: linear-gradient(145deg, blue, rgba(255, 0, 0, 0.566));
-    height: 100vh;
+    min-height: 100vh;
     font-family:"Roboto"
 }
 form{
@@ -11,6 +11,7 @@ form{
 }
 
 .cont{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,6 +20,7 @@ form{
 }
 
 .app{
+    box-shadow: 5px 5px 5px red;
     padding: 1.5rem;
     margin: 7rem auto;
     background: rgb(59, 59, 59);
@@ -29,6 +31,7 @@ form{
 
 
 .app li{
+    box-shadow: rgba(33, 33, 128, 0.25) 0px 50px 100px -20px, rgba(59, 50, 50, 0.3) 0px 30px 60px -30px, rgba(17, 77, 137, 0.35) 0px -2px 6px 0px inset;
     margin-top: 0.7rem;
     list-style:none;
 }
@@ -54,6 +57,7 @@ h1,#add_task button, input{
     background: rgb(20, 14, 40);
     color: white;
     width: 80%;
+    box-shadow: rgba(33, 33, 128, 0.25) 0px 50px 100px -20px, rgba(243, 243, 243, 0.3) 0px 30px 60px -30px, rgba(17, 77, 137, 0.35) 0px -2px 6px 0px inset;
 }
 #add_task button{
     
