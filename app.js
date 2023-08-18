@@ -12,7 +12,7 @@ let nameText = document.querySelector(".app h1 span");
 
 //NAME PROMPT
 const textBox = prompt("Enter Your Name");
-nameText.textContent = document.cookie.split("=")[1];
+/* nameText.textContent = document.cookie.split("=")[1]; */
 
 if (nameText.textContent===""){
     textBox;
